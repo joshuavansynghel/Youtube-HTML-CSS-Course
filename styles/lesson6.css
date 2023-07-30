@@ -1,0 +1,11 @@
+p {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.headline {
+  font-size: 46px;
+  font-weight: bold;
+}
