@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 10</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+      
+    <style>
+      p{
+        font-family: Roboto, Arial;
+      }
+
+      .exercise-F-img {
+        height: 200px;
+        width: 180px;
+        object-fit: cover;
+      }
+
+      .user {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding-left: 6px;
+      }
+
+      .friends {
+        font-size: 14px;
+        color: gray;
+        padding-left: 6px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .add-friend {
+        color: white;
+        background-color:rgb(56, 154, 245);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-left: 6px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .horizontal {
+        display: inline-block;
+        margin-bottom: 8px;
+        margin-left: 4px;
+      }
+
+      .div-E {
+        display: inline-block;
+        box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .small-profile-pic {
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 200px;
+        object-fit: fill;
+
+      }
+    </style>
+
+  </head>
+  <body>
+    <p class="p-exercise">Exercise 10E</p>
+    <div class="horizontal">
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/luffy.webp">
+        <p class="user">Luffy</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/zorro.jpg">
+        <p class="user">Zorro</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">3 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/sanji.jpg">
+        <p class="user">Sanji</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">4 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>
