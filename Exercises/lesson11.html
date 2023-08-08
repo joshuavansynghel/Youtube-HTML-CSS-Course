@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 11</title>
+    <style>
+      .exercise {
+        margin-top: 35px;
+      }
+
+      .exercise-F-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .user {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding-left: 6px;
+      }
+
+      .friends {
+        font-size: 14px;
+        color: gray;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        margin-left: 4px;
+        vertical-align: center;
+        display: inline-block;
+      }
+
+      .add-friend {
+        color: white;
+        background-color:rgb(56, 154, 245);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-left: 6px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .horizontal {
+        margin-bottom: 8px;
+        margin-left: 4px;
+      }
+
+      .horizontal-grid {
+        display: grid;
+        grid-template-columns: 180px 180px 180px;
+        column-gap: 15px;
+      }
+
+      .div-E {
+        box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .small-profile-pic {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        border-radius: 200px;
+        object-fit: fill;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="exercise">Exercise 11A</p>
+    <div style="
+      display: grid;
+      grid-template-columns: 200px 75px;">
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: lightpink;">75px</div>
+    </div>
+    
+    <p class="exercise">Exercise 11B</p>
+    <div style="
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;">
+      <div style="background-color: lightblue;">col1</div>
+      <div style="background-color: lightpink;">col2</div>
+      <div style="background-color: lightblue;">col3</div>
+    </div>
+
+    <p class="exercise">Exercise 11C</p>
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;">
+      <div style="background-color: lightpink;">col1</div>
+      <div style="background-color: lightpink;">col2</div>
+      <div style="background-color: lightpink;">col3</div>
+      <div style="background-color: lightpink;">col4</div>
+      <div style="background-color: lightpink;">col1</div>
+      <div style="background-color: lightpink;">col2</div>
+      <div style="background-color: lightpink;">col3</div>
+      <div style="background-color: lightpink;">col4</div>
+    </div>
+
+    <p class="exercise">Exercise 11D</p>
+
+    <div class="horizontal-grid">
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/luffy.webp">
+        <p class="user">Luffy</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/zorro.jpg">
+        <p class="user">Zorro</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">3 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="div-E">
+        <img class="exercise-F-img" src="/thumbnails/sanji.jpg">
+        <p class="user">Sanji</p>
+        <div class="horizontal">
+          <img class="small-profile-pic" src="/thumbnails/chopper.png">
+          <p class="friends">4 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+      </div>
+  </body>
+</html>
