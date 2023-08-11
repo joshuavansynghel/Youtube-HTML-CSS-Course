@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 12</title>
+    <style>
+      .exercise {
+        margin-top: 35px;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .container-E {
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(128, 128, 128, 0.4);
+        border-radius: 5px;
+        width: 250px;
+      }
+
+      .flexbox-E {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .button-E {
+        color: white;
+        background-color: rgb(69, 135, 221);
+        border: none;
+        border-radius: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .flexbox-F {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        background-color: rgb(127, 88, 134);
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+      }
+
+      .text-F {
+        color: white;
+        font-size: 18px;
+        font-style: bold;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .searchbar-F {
+        max-width: 300px;
+        border-radius: 50px;
+        border: none;
+        flex: 1;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .button-F {
+        color: white;
+        background-color: rgb(127, 88, 134);
+        font-weight: 400px;
+        font-size: 14px;
+        border-width: 1px;
+        border-color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="exercise">Exercise 12A</p>
+    <div class="flexbox">
+      <div style="
+        background-color: lightblue;
+        width: 200px;">
+        200px</div>
+      <div style="
+        background-color: lightpink;
+        width: 75px;">
+        75px</div>
+    </div>
+
+    <p class="exercise">Exercise 12B</p>
+    <div class="flexbox">
+      <div style="
+        background-color: lightblue;
+        width: 50px;">
+        item1</div>
+      <div style="
+        background-color: lightpink;
+        flex: 1;">item2</div>
+      <div style="
+        background-color: lightblue;
+        width: 75px;">
+        item3</div>
+    </div>
+
+    <p class="exercise">Exercise 12C</p>
+    <div class="flexbox" style="justify-content: space-between;">
+      <div style="
+        background-color: lightpink;">
+        item1</div>
+      <div style="
+        background-color: lightpink;">
+        item2</div>
+      <div style="
+        background-color: lightpink;">
+        item3</div>
+      <div style="
+        background-color: lightpink;">
+        item4</div>
+    </div>
+
+    <p class="exercise">Exercise 12D</p>
+    <div class="flexbox" style="
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      border: solid;
+      border-width: 1px;
+      border-color: gray;">
+      <div style="
+      background-color: lightpink;">
+      item1</div>
+    <div style="
+      background-color: lightpink;">
+      item2</div>
+    </div>
+
+    <p class="exercise">Exercise 12E</p>
+    <div class="container-E">
+      <div class="flexbox-E">
+        <p>Home</p>
+        <button class="button-E">14</button>
+      </div>
+      <div class="flexbox-E">
+        <p>Home</p>
+        <button class="button-E">14</button>
+      </div>
+      <div class="flexbox-E">
+        <p>Home</p>
+        <button class="button-E">14</button>
+      </div>
+    </div>
+
+    <p class="exercise">Exercise 12F</p>
+    <div class="flexbox-F">
+      <p class="text-F">Home</p>
+      <input class="searchbar-F" type="text" placeholder="Search">
+      <button class="button-F">Download</button>
+    </div>
+  </body>
+</html>
