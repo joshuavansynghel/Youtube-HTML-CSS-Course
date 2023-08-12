@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 13</title>
+    <style>
+      .exercise {
+        margin-top: 35px;
+      }
+
+      .flexbox-A {
+        display: flex;
+        height: 50px;
+      }
+
+      .column1-A {
+        display: flex;
+        width: 100px;
+        background-color: lightpink;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item1-A {
+        color: white;
+        background-color: black;
+      }
+
+      .column2-A {
+        display: flex;
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .flexbox-B {
+        display: flex;
+        height: 50px;
+      }
+
+      .column1-B {
+        width: 100px;
+        background-color: lightpink;
+      }
+
+      .column2-B {
+        width: 200px;
+        background-color: lightblue;
+      }
+
+      .row2-B {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .row-item-B {
+        color: white;
+        background-color: black;
+      }
+
+      .container-D {
+        width: 400px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(192, 192, 192);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        padding-left: 15px;
+      }
+
+      .outer-flexbox-D {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      .text-D {
+        color:rgb(146, 146, 146)
+      }
+
+      .profile-pic-D {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+      }
+
+      .colmun2-D {
+        display: inline;
+      }
+
+      .inner-flexbox-D {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Exercise 13A</p>
+    <div class="flexbox-A">
+      <div class="column1-A">
+        <div class="item1-A">item1</div>
+      </div>
+      <div class="column2-A"></div>
+    </div>
+
+    <p class="exercise">Exercise 13B</p>
+    <div class="flexbox-B">
+      <div class="column1-B"></div>
+      <div class="column2-B">
+        <div>row1</div>
+        <div class="row2-B">
+          <div class="row-item-B">row2</div>
+          <div class="row-item-B">row2</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="exercise">Exercise 13C</p>
+    <div class="container-D">
+      <p class="text-D">ALL INBOXES</p>
+      <div class="outer-flexbox-D">
+        <div>
+          <img class="profile-pic-D" src="/thumbnails/luffy.webp">
+          <div class="column2-D">
+            <div class="inner-flexbox-D">
+              <p class="main-header-D">Chewy Promotions</p>
+              <p class="text-D">4:58 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
