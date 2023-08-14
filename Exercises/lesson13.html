@@ -60,7 +60,7 @@
         width: 400px;
         border-width: 1px;
         border-style: solid;
-        border-color: rgb(192, 192, 192);
+        border-color: rgb(230, 230, 230);
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
         padding-left: 15px;
       }
@@ -68,25 +68,117 @@
       .outer-flexbox-D {
         display: flex;
         padding-bottom: 30px;
+        align-items: center;
       }
 
       .text-D {
-        color:rgb(146, 146, 146)
+        color:rgb(146, 146, 146);
+        margin-top: 10px;
+        font-family: Arial;
       }
 
       .profile-pic-D {
         width: 40px;
         height: 40px;
         border-radius: 20px;
-      }
-
-      .colmun2-D {
-        display: inline;
+        margin-right: 10px;
+        display: inline-block;
       }
 
       .inner-flexbox-D {
         display: flex;
+        justify-content: space-between;
+        width: 340px;
+        height: 35px;
       }
+
+      .main-header-D {
+        font-family: Arial;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      .secondary-header-D {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .summary-D {
+        color:rgb(146, 146, 146);
+        margin-top: 10px;
+        font-family: Arial;
+        margin-top: 4px;
+      }
+
+      .container {
+        display: flex;
+        margin-bottom: 300px;
+      }
+
+      .profile-pic {
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+
+      .tweet-details {
+        flex: 1;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        vertical-align: top;
+      }
+
+      .tweet-handle {
+        font-family: Arial;
+        font-weight: bold;
+        margin-right: 4px;
+        margin-bottom: 6px;
+      }
+
+      .tweet-author {
+        font-family: Arial;
+        color: gray;
+        margin-bottom: 6px;
+      }
+
+      .content {
+        width: 350px;
+      }
+
+      .inner-flexbox-F {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        align-items: center;
+        border:solid;
+        border-color:rgb(206, 206, 206);
+        border-width: 1px;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .first-column {
+        height: 80px;
+        width: 80px;
+        background-color: rgb(206, 206, 206);
+        margin-right: 10px;
+      }
+
+      .second-column {
+        flex: 1;
+        margin-left: 10px;
+      }
+
     </style>
   </head>
   <body>
@@ -114,12 +206,59 @@
     <div class="container-D">
       <p class="text-D">ALL INBOXES</p>
       <div class="outer-flexbox-D">
-        <div>
-          <img class="profile-pic-D" src="/thumbnails/luffy.webp">
-          <div class="column2-D">
-            <div class="inner-flexbox-D">
-              <p class="main-header-D">Chewy Promotions</p>
-              <p class="text-D">4:58 PM</p>
+        <img class="profile-pic-D" src="/thumbnails/luffy.webp">
+        <div class="column2-D">
+          <div class="inner-flexbox-D">
+            <p class="main-header-D">Chewy Promotions</p>
+            <p class="text-D">4:58 PM</p>
+          </div>
+          <p class="secondary-header-D">Biggest sales of the year!</p>
+          <p class="summary-D">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+      <div class="outer-flexbox-D">
+        <img class="profile-pic-D" src="/thumbnails/zorro.jpg">
+        <div class="column2-D">
+          <div class="inner-flexbox-D">
+            <p class="main-header-D">Best Buy</p>
+            <p class="text-D">12:32 PM</p>
+          </div>
+          <p class="secondary-header-D">Your Best Buy eReceipt</p>
+          <p class="summary-D">Thank you for shopping at Best Buy, here is...</p>
+        </div>
+      </div>
+      <div class="outer-flexbox-D">
+        <img class="profile-pic-D" src="/thumbnails/sanji.jpg">
+        <div class="column2-D">
+          <div class="inner-flexbox-D">
+            <p class="main-header-D">Netflix</p>
+            <p class="text-D">9:00 AM</p>
+          </div>
+          <p class="secondary-header-D">Here's what's coming soon to Netflix</p>
+          <p class="summary-D">Brand new movies and shows, old favorites...</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="exercise">Exercise 13F</p>
+    <div class="container">
+      <div class="profile-pic-column">
+        <img class="profile-pic" src="/thumbnails/luffy.webp">
+      </div>
+      <div class="tweet-details">
+        <div class="header">
+          <p class="tweet-handle">supersimple.dev</p>
+          <p class="tweet-author">@SuperSimpleDev</p>
+        </div>
+        <div class="content">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="inner-flexbox-F">
+          <div class="first-column"></div>
+          <div class="second-column">
+            <div class="tweet-author">youtube.com</div>
+            <div class="content">
+              Backend web development - a complete overview (2021)
             </div>
           </div>
         </div>
