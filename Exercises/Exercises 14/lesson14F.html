@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 14F</title>
+    <style>
+      .first-sidebar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 49, 49);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .profile-pic {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        object-fit: cover;
+      }
+
+      .second-sidebar {
+        position: fixed;
+        background-color: rgb(73, 73, 73);
+        top: 0;
+        bottom: 0;
+        left: 84px;
+        padding-left: 12px;
+        width: 150px;
+      }
+
+      .first-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .white-text {
+        font-family: Arial;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 0px;
+      }
+
+      .gray-text {
+        margin-bottom: 0px;
+        margin-right: 20px;
+        color:rgb(139, 139, 139)
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-sidebar">
+      <img class="profile-pic" src="/thumbnails/luffy.webp">
+      <img class="profile-pic" src="/thumbnails/zorro.jpg">
+      <img class="profile-pic" src="/thumbnails/sanji.jpg">
+    </div>
+    <div class="second-sidebar">
+      <div class="first-row">
+        <p class="white-text">INFO</p>
+        <p class="gray-text">+</p>
+      </div>
+      <p class="gray-text"># new-videos</p>
+      <p class="gray-text"># updates</p>
+      <p class="gray-text"># faq</p>
+    </div>
+  </body>
+</html>

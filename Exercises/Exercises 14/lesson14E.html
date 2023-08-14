@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 14E</title>
+    <style>
+      .header {
+        background-color: rgb(240,240,240);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+      }
+
+      .profile-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-left: 30px;
+        align-items: center;
+      }
+
+      .flexbox {
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+      }
+
+      .profile-name {
+        font-family: Arial;
+        margin-left: 12px;
+        font-weight: bold;
+        flex: 1;
+      }
+
+      .add-friend {
+        color: white;
+        background-color: rgb(46, 124, 212);
+        border: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 8px;
+      }
+
+      .message {
+        color: black;
+        background-color: rgb(220, 220, 220);
+        border: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 8px;
+        margin-right: 50px;
+        margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="flexbox">
+        <img class="profile-pic" src="/thumbnails/luffy.webp">
+        <div class="profile-name">Monkey D. Luffy</div>
+        <button class="add-friend">Add Friend</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
