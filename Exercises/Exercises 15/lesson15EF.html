@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 15E & F</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      .outer-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .shirt {
+        height: 300px;
+
+      }
+
+      .discount {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .cart-container {
+        position: absolute;
+        display:flex;
+        background-color: rgb(218, 218, 218, 0.5);
+        width: 100%;
+        height: 78px;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        bottom: 4px;
+      }
+
+      .cart-button {
+        font-family: Arial;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border: solid;
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <img class="shirt" src="/thumbnails/shirt.jpg">
+      <div class="discount">20% OFF</div>
+      <div class="cart-container">
+        <button class="cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
